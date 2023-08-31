@@ -14,7 +14,11 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },  {
+    path: 'recupera-contrasena',
+    loadChildren: () => import('./recupera-contrasena/recupera-contrasena.module').then( m => m.RecuperaContrasenaPageModule)
   },
+
 ];
 
 @NgModule({
